@@ -1,9 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap';
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Raleway;
+  font-family: 'Manrope', sans-serif;
 }
 
 /* nav bar */
@@ -370,6 +370,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .body-2-p1 > p::after , .body-2-p2 > p::after, .body-2-p3 > p::after {
+    font-size: 0.5em;
     position: absolute;
     content: "";
     width: 100%;
