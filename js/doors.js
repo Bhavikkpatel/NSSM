@@ -33,11 +33,18 @@ function scrollFunction() {
     document.querySelector(".Top-content").style.opacity = window.pageYOffset === 0?1:1-((window.pageYOffset-30)/300);
 }
 
-const cards = document.querySelectorAll(".product .card");
+var viewport = document.querySelector(".product .viewport");
 
-cards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-        // const product = document.querySelector(".product");
-        // product.style.gridGap = "5em";
-    });
+
+viewport.addEventListener("scroll", ()=> {
+    var clientWid = viewport.clientWidth;
+    var scrollLef = viewport.scrollLeft;
+    var scrollWid = viewport.scrollWidth;
+    var count = (scrollWid/265);
+    var currentIndex = 1;
+    console.log(count | 0);
+    if() {
+              
+    }
 });
+

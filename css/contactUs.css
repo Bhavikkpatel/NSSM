@@ -1,0 +1,121 @@
+/* contact us*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    transform-origin: top;
+  }
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 4em;
+    z-index: 20;
+  }
+  
+  .contactFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contactFlex .socialLinks .ImageBox {
+    cursor: pointer;
+    height: 14vh;
+    width: 7vw;
+    border-radius: 50%;
+    margin-top: 20%;
+    margin-left: 100%;
+    background-color: #fff;
+  }
+  
+  .contactFlex .socialLinks .ImageBox .logo{
+    transform: translateY(-1%)scale(60%);
+    transition: all 150ms ease-in;
+  }
+  
+  .contactFlex .socialLinks .ImageBox:hover .logo {
+    transform: translateY(-7%) scale(60%);
+  }
+  
+  .locationBox {
+    height: 60%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .locationBox .address {
+    background-color: #7ca2aa;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .locationBox .address .addr p{
+    color: #fff;
+  }
+
+  .locationBox .map {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .locationBox .map .gmap {
+    height: 100%;
+    width: 100%;
+  }
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  .overlay::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .overlay::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .overlay::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+  }
+  
+  /* contact us end */

@@ -40,7 +40,7 @@ Stretchy Nav style - common to:
   position: fixed;
   z-index: 2;
   top: 40px;
-  right: 5%;
+  right: 10%;
   pointer-events: none;
 }
 .cd-stretchy-nav .stretchy-nav-bg {

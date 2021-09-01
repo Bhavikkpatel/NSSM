@@ -419,6 +419,8 @@ body::-webkit-scrollbar-thumb {
       border-radius: 1px 1px 1px 1px;
     }
     /* mobile-text animation ends */
+
+
   }
   
   @media screen and (max-width: 1000px) {
@@ -433,9 +435,10 @@ body::-webkit-scrollbar-thumb {
   }
   
 
-/* product */
+@media screen and (min-width: 800px) {
+  /* product */
 
-  .product {
+  .product .viewport{
     padding: 1em 1em 1em 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -444,13 +447,13 @@ body::-webkit-scrollbar-thumb {
     grid-template-rows: auto;
   }
 
-  .product .card img {
+  .product .viewport .card img {
     top: 0;
     height: 90%;
     transition: all 250ms ease;
   }
 
-  .product .card {
+  .product .viewport .card {
     z-index: 1;
     position: relative;
     margin-left: 1em;
@@ -461,7 +464,7 @@ body::-webkit-scrollbar-thumb {
     /* background-color: aqua; */
   } 
 
-  .product .card .backcard { 
+  .product .viewport .card .backcard { 
     position: absolute;
     z-index: -1;
     height: 90%;
@@ -472,11 +475,11 @@ body::-webkit-scrollbar-thumb {
     transform-origin: bottom;
   }
   
-  .product .card:hover img{
+  .product .viewport .card:hover img{
     transform: scale(105%); 
   }
 
-  .product .card .dummy {
+  .product .viewport .card .dummy {
     position: absolute;
     height: 35%;
     width: 70%;
@@ -488,11 +491,11 @@ body::-webkit-scrollbar-thumb {
 
   }
 
-  .product .card:hover .dummy {
+  .product .viewport .card:hover .dummy {
     transform: scale(100%);
   }
 
-  .product .card .name {
+  .product .viewport .card .name {
     position: absolute;
     height: 15%;
     width: 70%;
@@ -504,8 +507,33 @@ body::-webkit-scrollbar-thumb {
 
   }
 
-  .product .card:hover .name {
+  .product .viewport .card:hover .name {
     transform: scale(100%);
   }
 
 /* product ends */
+}
+
+@media screen and (max-width: 800px) {
+  .product {
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product .viewport {
+    width: fit-content;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+  }
+  .product .viewport .card  {
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-right: 20%;
+  }
+}
