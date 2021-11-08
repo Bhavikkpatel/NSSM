@@ -621,7 +621,7 @@ body::-webkit-scrollbar-thumb {
     width: 32px;
     height: 32px;
     opacity: 0.3;
-    z-index: 1000;
+    z-index: -1;
   }
   .close:hover {
     opacity: 1;

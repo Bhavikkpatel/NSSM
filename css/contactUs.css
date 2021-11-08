@@ -1,4 +1,5 @@
 /* contact us*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
 
 .overlay {
     height: 0%;
@@ -77,14 +78,20 @@
   }
 
   .locationBox .address {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(../Pictures/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     background-color: #7ca2aa;
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .locationBox .address .addr p{
+    font-family: Dosis;
     color: #fff;
   }
 
