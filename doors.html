@@ -12,6 +12,12 @@
 	<script src="./js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
+    <div name="details" class="">
+        <div class="close" onclick="closeLay()"></div>
+        <div class="details">
+            <!-- <img src="./Pictures/d1.png" alt="" srcset=""> -->
+    </div>
+    </div>
     <div id="myNav" class="overlay">
         <a class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -19,7 +25,7 @@
                 <div class="socialLinks">
                     <div class="ImageBox">
                         <div class="logo">
-                            <img src="./logo/whatsapp.png" alt="">
+                            <a href="https://wa.me/918667802637?lang=en?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank"><img src="./logo/whatsapp.png" alt=""></a>
                         </div>
                     </div>
                     <div class="ImageBox">
@@ -34,7 +40,7 @@
                     </div>
                     <div class="ImageBox">
                         <div class="logo">
-                            <img src="./logo/gmail.png" alt="">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dpatelbhavikk@gmail.com" target=”_blank”><img src="./logo/gmail.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -69,10 +75,10 @@
                 </a>
         
                 <ul>
-                    <li><a href="./index.html"><span>Home</span></a></li>
-                    <li><a href="#0"><span>Product</span></a></li>
-                    <li><a href="./doors.html" class="active"><span>Gallery</span></a></li>
-                    <li><a href="#0"><span>Contact</span></a></li>
+                    <li><a class="negatecolor" href="./index.html"><span>Home</span></a></li>
+                    <li><a class="negatecolor" href="#0"><span>Product</span></a></li>
+                    <li><a class="negatecolor" href="./doors.html" class="active"><span>Gallery</span></a></li>
+                    <li><a class="negatecolor" href="#0"><span>Contact</span></a></li>
                 </ul>
         
                 <span aria-hidden="true" class="stretchy-nav-bg"></span>
@@ -129,83 +135,14 @@
             <a href=""><span></span></a>
         </div>
     </div>
-    <div class="product">
-        <div class="viewport">
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-            <div class="card">
-                <div class="backcard"></div>
-                <img src="./Pictures/d1.png" alt="">
-                <div class="name"></div>
-                <div class="dummy"></div>
-            </div>
-        </div>
+    <div class="gallery minwidth">
+        <!-- <div class="gallery__column" name="productlist">
+            
+        </div> -->
+
     </div>
-    <script src="./js/doors.js"></script>
+    <script src="./js/actions.js"></script>
+    <script type="module" src="./js/doors.js"></script>
     <script src="./js/contactUs.js"></script>
     <script src="./js/jquery-2.1.4.js"></script>
     <script src="./js/main.js"></script>

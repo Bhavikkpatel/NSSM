@@ -23,7 +23,7 @@ function scrollFunction() {
     // opacity reduce of company name
     // document.querySelector(".Top-content").style.opacity = window.pageYOffset === 0?1:1-((window.pageYOffset-30)/300);
     
-    //scroll by next mark
+    // scroll by next mark
     // if(window.pageYOffset > 450 && window.pageYOffset < 500) {
     //     setTimeout(function() {
     //     window.scrollBy({
@@ -34,5 +34,4 @@ function scrollFunction() {
     //     console.log(window.pageYOffset);
     // }
 }
-
 
